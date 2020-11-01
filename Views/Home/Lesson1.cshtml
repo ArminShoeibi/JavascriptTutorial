@@ -11,5 +11,48 @@
     <title>Lesson1</title>
 </head>
 <body>
+    <h1>console Object</h1>
+
+    <!--
+        The console object provides access to the browser's debugging console.
+
+        The console object can be accessed from any global object. Window on browsing scopes.
+        It's exposed as Window.console, and can be referenced as simply console.
+    -->
+    <script>
+
+        // Way1
+        console.log("Hello World (1)");
+
+        // Way2
+        window.console.log("Hello World (2)");
+
+        // Way3 (Recommended in ECMAScript 2020)
+        globalThis.console.log("Hello World (3)");
+
+        // Informative logging of information.
+        console.info("logging informations info()");
+
+        console.warn("warning message warning()");
+        console.error("error message error()");
+
+        //Outputs a message to the console with the log level debug.
+        console.debug("message with the log level of debug");
+
+
+        //Starts a timer with a name specified as an input parameter
+        console.time('myTimer');
+        //Logs the value of the specified timer to the console
+        console.timeLog('myTimer');
+        //Stops the specified timer and logs the elapsed time in seconds since it started
+        console.timeEnd('myTimer');
+
+
+        //Clear the console.
+        //console.clear();
+
+        //Displays tabular data as a table.
+        console.table([100, 200, 300, 400, 500]);
+    </script>
 </body>
 </html>

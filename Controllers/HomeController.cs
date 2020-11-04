@@ -23,6 +23,8 @@ namespace JavascriptTutorial.Controllers
         public IActionResult Lesson2() => View();
 
 
+        // Primitive Types
+        public IActionResult Lesson3() => View();
 
     }
 }

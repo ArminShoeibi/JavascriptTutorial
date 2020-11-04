@@ -16,7 +16,13 @@ namespace JavascriptTutorial.Controllers
             return View();
         }
 
-        //console Object
+        // console Object
         public IActionResult Lesson1() => View();
+
+        // Variables
+        public IActionResult Lesson2() => View();
+
+
+
     }
 }

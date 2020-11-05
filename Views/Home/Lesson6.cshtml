@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lesson6</title>
+</head>
+<body>
+
+
+    <script>
+        /* Functions in Javascript
+         * 
+
+         function name([param[, param[, ...param]]]) {
+            statements
+         }
+
+         *
+         */
+
+        
+
+        /* Declare the function 'greet' */
+        function greet() {
+            console.log('Hello, Welcome.');
+        }; // you can terminate your function with a semicolon
+
+
+
+        // name is a partameter of sayHello() function
+        // Parameter = Time of Declaration
+        function sayHello(name) {
+            console.log(`Hello ${name}.`);
+        }
+
+
+        greet(); // Invoking(Calling) greet function
+        sayHello('Armin'); // Armin is an argument to the sayHello() function
+
+
+
+        // the default value of variables in Javascript is undefined
+
+
+        let plusOne = function (num) {
+            return num + 1;
+        };
+
+        console.log(plusOne(2))
+
+        function square(number) {
+            return number * number;
+        }
+
+        let squareOfFour = square(4);
+        console.log(squareOfFour);
+    </script>
+
+</body>
+</html>

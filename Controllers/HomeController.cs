@@ -32,5 +32,9 @@ namespace JavascriptTutorial.Controllers
 
         // Arrays
         public IActionResult Lesson5() => View();
+
+        // Functions
+        public IActionResult Lesson6() => View();
+
     }
 }

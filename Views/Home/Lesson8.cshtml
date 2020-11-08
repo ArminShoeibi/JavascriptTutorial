@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lesson8</title>
+</head>
+<body>
+
+
+    <script>
+        /* Conditional Statements
+         *
+         * 1) if...else
+         * 2) switch...case
+         *
+         */
+
+        /*
+         
+        if (condition1)
+            statement1
+        else if (condition2)
+            statement2
+        else if (condition3)
+            statement3
+        else
+            statementN
+
+        */
+
+
+        let hour = new Date().getHours();
+        console.log(hour);
+
+        if (hour >= 6 && hour < 12) {
+            console.log('Good Morning');
+        }
+        else if (hour >= 12 && hour < 18) {
+            console.log('Good Afternoon')
+        }
+        else {
+            console.log('Good Evening');
+        }
+
+
+    </script>
+
+
+
+
+</body>
+</html>

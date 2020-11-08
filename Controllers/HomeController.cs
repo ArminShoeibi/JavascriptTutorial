@@ -46,11 +46,14 @@ namespace JavascriptTutorial.Controllers
         // Control Flow switch
         public IActionResult Lesson9() => View();
 
-        // Control Flow For loop
+        // Control Flow for loop
         public IActionResult Lesson10() => View();
 
-        // Control Flow While loop
+        // Control Flow while loop
         public IActionResult Lesson11() => View();
+
+        // Control Flow do...while loop
+        public IActionResult Lesson12() => View();
     }
 
 }

@@ -36,9 +36,7 @@ namespace JavascriptTutorial.Controllers
         // Functions
         public IActionResult Lesson6() => View();
 
-
-        // Operators
+        // Operators 
         public IActionResult Lesson7() => View();
-
     }
 }

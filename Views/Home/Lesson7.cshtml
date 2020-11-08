@@ -95,9 +95,68 @@
         console.log(numberOne != 10); // true
         console.log(numberOne !== 1); // false
          
-        // === Strict Equality (Type + Value)
-        // == Lose Equality (Value)
+        //  === Strict Equality (Type + Value)
+       // == Lose Equality (Value)
 
+
+
+        /********************************************/
+
+        /* Conditional (ternary) operator
+         * The conditional (ternary) operator is the only JavaScript operator that takes three operands.
+         * 
+         * 
+         * a condition followed by a question mark (?),
+           then an expression to execute if the condition is truthy followed by a colon (:),
+           and finally the expression to execute if the condition is falsy.
+         
+
+         */
+
+        let points = 110;
+        let type = points > 100 ? "Gold" : "Silver";
+        console.log(type);
+
+
+        /********************************************/
+
+        /* Logical Operators
+         *  1) && AND ( Returns TRUE if both operands are TRUE)
+         *  2) || OR  ( Returns TRUE if one the operands is TRUE)
+         *  3) !  NOT
+         
+         
+         */
+
+
+
+        /* Logical Operators with Non-Booleans
+         * 
+         * Falsy Values
+         * 1) undefined
+         * 2) null
+         * 3) 0
+         * 4) -0
+         * 5) false
+         * 6) '' empty string
+         * 7) Nan
+         * 
+         * Anything that is not Falsy -> Truthy
+         */
+
+
+        console.log(false || true); // true
+        console.log(false || 'Armin'); // Armin
+        console.log(false || 1); // 1
+
+        console.log(false || 1 || 2); // 1 Short Circuiting
+
+
+        let userColor = 'red';
+        let defaultColor = 'blue';
+        let currentColor = userColor || defaultColor;
+
+        console.log(currentColor); // red
     </script>
 </body>
 </html>

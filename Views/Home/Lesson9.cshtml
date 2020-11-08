@@ -1,0 +1,99 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lesson9</title>
+</head>
+<body>
+
+    <script>
+        /*
+         The switch statement evaluates an expression,
+         matching the expression's value to a case clause,
+         and executes statements associated with that case,
+         as well as statements in cases that follow the matching case.
+         */
+
+        /*
+         *
+        switch (expression) {
+            case value1:
+                Statements executed when the
+                result of expression matches value1
+                [break;]
+
+            case value2:
+                Statements executed when the
+                result of expression matches value2
+                [break;]
+
+            case valueN:
+                Statements executed when the
+                result of expression matches valueN
+                [break;]
+
+                [default:
+                Statements executed when none of
+                the values match the value of the expression
+                [break;]]
+        }
+        */
+
+
+        /*
+         * 1) The break statement is not required if a return statement precedes it.
+         * 2) The default clause is the last clause, but it does not need to be so.
+         * 3) The optional break statement associated with each case label ensures that
+              the program breaks out of switch once the matched statement is executed and continues
+              execution at the statement following switch.
+         *
+         * */
+        const fruit = "Bananas";
+
+        switch (fruit) {
+            case 'Oranges':
+                console.log('Oranges are $0.59 a pound.');
+                break;
+
+            case 'Apples':
+                console.log('Apples are $0.32 a pound.');
+                break;
+
+            case 'Cherries':
+                console.log('Cherries are $3.00 a pound.');
+                break;
+
+            default:
+                console.log('Sorry, we are out of ' + fruit + '.');
+        }
+
+
+
+
+        let numberTen = 10;
+        switch (numberTen) {
+            case 20:
+                console.log(20);
+                break;
+            case 15:
+                console.log(15);
+                break;
+            case 10:
+                console.log(10);
+                break;
+            default:
+                console.log('default clause executed');
+        }
+
+
+         
+
+    </script>
+</body>
+</html>

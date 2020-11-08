@@ -42,5 +42,8 @@ namespace JavascriptTutorial.Controllers
 
         // Control Flow if...else
         public IActionResult Lesson8() => View();
+
+        // Control Flow switch
+        public IActionResult Lesson9() => View();
     }
 }

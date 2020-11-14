@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lesson13</title>
+</head>
+
+<body>
+
+    <!--
+
+     JavaScript supports different kinds of loops:
+
+     1) for - loops through a block of code a number of times
+     2) for/in - loops through the properties of an object or an array
+     3) for/of - loops through the values of an iterable object
+     4) while - loops through a block of code while a specified condition is true
+     5) do/while - loops through a block of code once, and then repeats the loop while a specified condition is true
+
+     Note: Do not use the for/in statement to loop through arrays where index order is important.
+           Use the for statement instead.
+    -->
+
+
+    <script>
+
+        /*
+         * The for...in statement iterates over all enumerable properties of an object
+           that are keyed by strings (ignoring ones keyed by Symbols),
+           including inherited enumerable properties.
+
+
+         */
+
+        const person = {
+            firstName: 'Armin',
+            lastName: 'Shoeibi',
+            age: 19,
+            major: 'Software Engineering',
+        };
+
+
+        // person.lastName ===> Dot Notation
+
+        // person['lastName'] ===> Bracket Notation
+
+        for (let key in person) {
+            console.log(key); // log name of Properties
+
+            console.log(key, person[key]); // log name of Properties and their values
+        }
+
+
+        /*
+        Note: Do not use the for/in statement to loop through arrays where index order is important.
+              Use the for statement instead.
+        */
+
+        const colors = ['red', 'green', 'blue'];
+
+        for (let colorIndex in colors) {
+            globalThis.console.log(color); // log index of elements
+
+            console.log(colors[colorIndex]);
+        }
+
+    </script>
+</body>
+</html>

@@ -22,10 +22,8 @@ namespace JavascriptTutorial.Controllers
         // Variables
         public IActionResult Lesson2() => View();
 
-
         // Primitive Types
         public IActionResult Lesson3() => View();
-
 
         // Object Literal
         public IActionResult Lesson4() => View();
@@ -38,7 +36,6 @@ namespace JavascriptTutorial.Controllers
 
         // Operators 
         public IActionResult Lesson7() => View();
-
 
         // Control Flow if...else
         public IActionResult Lesson8() => View();
@@ -57,6 +54,10 @@ namespace JavascriptTutorial.Controllers
 
         // Control Flow for...in
         public IActionResult Lesson13() => View();
+
+        // Control Flow for...of (ES2015)
+        public IActionResult Lesson14() => View();
+
     }
 
 

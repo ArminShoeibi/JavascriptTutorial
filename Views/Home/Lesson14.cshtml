@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lesson14</title>
+</head>
+<body>
+
+
+    <script>
+        /* for/of - loops through the values of an iterable object (ECMAScript 2015)
+         
+         for (variable of iterable) {
+                statement
+         }
+         
+         * The for...of statement creates a loop iterating over iterable objects,
+         including: built-in String, Array, array-like objects (e.g., arguments or NodeList),
+         TypedArray, Map, Set, and user-defined iterables. 
+
+         * It invokes a custom iteration hook with statements to be executed for the value of each
+         distinct property of the object.
+         
+         */
+
+
+        let evenNumbers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22];
+        for (let num of evenNumbers) {
+            console.log(num);
+        }
+
+        const array1 = ['a', 'b', 'c'];
+
+        for (const element of array1) {
+            console.log(element);
+        }
+
+    </script>
+</body>
+</html>

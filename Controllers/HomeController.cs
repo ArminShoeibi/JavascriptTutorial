@@ -58,6 +58,8 @@ namespace JavascriptTutorial.Controllers
         // Control Flow for...of (ES2015)
         public IActionResult Lesson14() => View();
 
+        // Break and Continue
+        public IActionResult Lesson15() => View();
     }
 
 

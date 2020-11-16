@@ -3,5 +3,50 @@
     ViewData["Title"] = "Lesson15";
 }
 
-<h1>Lesson15</h1>
+<script>
+    /*
+     * break
+       The break statement terminates the current loop,
+       switch, or label statement and transfers program control to the
+       statement following the terminated statement.
+     
+
+
+       break statement breaks the loop and continues executing the code after the loop(if any):
+
+     
+     */
+
+    let i = 0;
+    while (i <= 10) {
+        if (i === 5) {
+            break; //The break statement "jumps out" of a loop.
+        }
+        console.log(i);
+        i++;
+    }
+
+    
+
+
+    /*
+      
+      The continue statement terminates execution of the statements in the
+      current iteration of the current or labeled loop, 
+      and continues execution of the loop with the next iteration.
+     
+     */
+
+    let o = 0;
+    while (o <= 10) {
+        if (o % 2 == 0) {
+            o++;
+            continue; //The continue statement "jumps over" one iteration in the loop.
+        }
+
+        console.log(o);
+        o++;
+    }
+
+</script>
 
